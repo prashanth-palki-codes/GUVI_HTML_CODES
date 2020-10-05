@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+
+
+h3 { 
+    text-align: center; 
+    background-color: red;
+    margin-left: 5px; 
+    margin-right:20px;
+}
+ input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: solid;
+      }
+      
+      .no-outline:focus {
+        outline: none;
+      }
+
+
+
+body{
+border: 2px solid black;
+margin-left:230px;
+margin-top:175px;
+}
+
+form{
+margin-left: 20px;
+}
+
+</style>
+
+<body style="width:50%">
+
+<form>
+	<h3>Yes! I want to subscribe to Mag-O-Zine</h3>
+	
+	<table>
+	<tr>
+	<th><input type="text" id="fname" size="30"></th>
+	<th><input type="text" id="lname" size="30" style="margin-left:35px"></th>
+	</tr>
+	
+	<tr>
+	<td><small><label for="fname">First Name</label></small></td>
+	<td><small><label for="lname" style="margin-left:35px">Last Name</label></small></td>
+	</tr>
+	</table>
+	
+	<table>
+	<tr>
+	<td><input type="text" id="address" size="70"><td>
+	</tr>
+	
+	<tr>
+	<td><small><label for="address">Address</label></small></td>
+	</tr>
+	</table>
+	
+	<table>
+	<tr>	
+	<td><input type="text" id="city" size="15"></td>
+	<td><input type="text" id="state" size="15" style="margin-left:35px"></td>
+	<td><input type="text" id="zip" size="15" style="margin-left:35px"></td>
+	</tr>
+
+	<tr>
+	<td><small><label for="city">City</label></small></td>
+	<td><small><label for="state" style="margin-left:35px">State</label></small></td>
+	<td><small><label for="zip" style="margin-left:35px">Zip</label></small></td>
+	</tr>
+	</table>
+</form>
+
+<form>
+	<b><p>Subscribe for:
+	<input type="checkbox" id="chk1">
+	<label for="chk1">1 year ($19.95)</label>
+	<input type="checkbox" id="chk2">
+	<label for=chk2">2 years ($35.00)</label></p>
+	
+	<p>Send me more information about:<br>
+	<input type="checkbox" id="one">
+	<label for="one">Computer-Zine</label><br>
+	<input type="checkbox" id="two">
+	<label for="two">Fishing-Zine</label><br>
+	<input type="checkbox" id="three">
+	<label for="three">Cat-O-Zine</label></p><br>
+	</b>
+
+</form>
+
+</body>
+</html>
