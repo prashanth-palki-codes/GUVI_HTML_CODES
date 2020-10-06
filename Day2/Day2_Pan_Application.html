@@ -12,9 +12,6 @@ background-color:#F8ECE0;
   border-collapse: collapse;
 }
 
-#taf,th,td{
-border-none;
-}
 </style>
 
 <body>
@@ -31,9 +28,9 @@ border-none;
 	<td></td>
 	<td colspan="3"><font color="red">*</font><b>Whether citizen of India</b>
 	<label for="yes" style="margin-left:50px">Yes</label>
-	<input type="radio" id="yes">
+	<input type="radio" id="yes" name="yesno">
 	<label for="no" style="margin-left:50px">No</label>
-	<input type="radio" id="no"></td>
+	<input type="radio" id="no" name="yesno"></td>
 	</tr>
 
 	<tr>
@@ -51,11 +48,11 @@ border-none;
 	<td></td>
 	<td colspan="3"><b>Title</b>
 	<label for="mr" style="margin-left:30px">Shri/Mr</label>
-	<input type="radio" id="mr">
+	<input type="radio" id="mr" name="mrms">
 	<label for="mrs" style="margin-left:30px">Smt./Mrs.</label>
-	<input type="radio" id="mrs">
+	<input type="radio" id="mrs" name="mrms">
 	<label for="ms" style="margin-left:30px">Kumari/Ms</label>
-	<input type="radio" id="ms"></td>
+	<input type="radio" id="ms" name="mrms"></td>
 	</tr>
 	
 
@@ -63,14 +60,14 @@ border-none;
 	<td></td>
 	<td colspan="3">
 	<table id="t02">
-	<th><b><label for="lname">Last Name/Surname</label></b></th>
-	<th><b><label for="fname" style="margin-left:300px">First Name</label></b></th>
-	<th><b><label for="mname" style="margin-left:300px">Middle Name</label></b></th>
+	<th style="border:none"><b><label for="lname">Last Name/Surname</label></b></th>
+	<th style="border:none"><b><label for="fname" style="margin-left:300px">First Name</label></b></th>
+	<th style="border:none"><b><label for="mname" style="margin-left:300px">Middle Name</label></b></th>
 	
 	<tr>
-	<td><input type="text" id="lname"></td>
-	<td><input type="text" id="fname" style="margin-left:300px"></td>
-	<td><input type="text" id="mname" style="margin-left:300px"></td>
+	<td style="border:none"><input type="text" id="lname"></td>
+	<td style="border:none"><input type="text" id="fname" style="margin-left:300px"></td>
+	<td style="border:none"><input type="text" id="mname" style="margin-left:300px"></td>
 	</tr>
 	</table>
 	</td>
@@ -108,9 +105,9 @@ border-none;
 	<td><b>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</b></td>
 	<td colspan="2">
 			<label for="yes1">Yes</label>
-			<input type="radio" id="yes1">
+			<input type="radio" id="yes1" name="yesrno">
 			<label for="no1">No</label>
-			<input type="radio" id="no1">
+			<input type="radio" id="no1" name="yesrno">
 	</td>
 	</tr>
 	
@@ -124,14 +121,14 @@ border-none;
 	<td></td>
 	<td colspan="3">
 	<table id="t03">
-	<th><b><label for="lname">Last Name/Surname</label></b></th>
-	<th><b><label for="fname" style="margin-left:300px">First Name</label></b></th>
-	<th><b><label for="mname" style="margin-left:300px">Middle Name</label></b></th>
+	<th style="border:none"><b><label for="lname">Last Name/Surname</label></b></th>
+	<th style="border:none"><b><label for="fname" style="margin-left:300px">First Name</label></b></th>
+	<th style="border:none"><b><label for="mname" style="margin-left:300px">Middle Name</label></b></th>
 	
 	<tr>
-	<td><input type="text" id="lname"></td>
-	<td><input type="text" id="fname" style="margin-left:300px"></td>
-	<td><input type="text" id="mname" style="margin-left:300px"></td>
+	<td style="border:none"><input type="text" id="lname"></td>
+	<td style="border:none"><input type="text" id="fname" style="margin-left:300px"></td>
+	<td style="border:none"><input type="text" id="mname" style="margin-left:300px"></td>
 	</tr>
 	</table>
 	</td>
@@ -146,14 +143,14 @@ border-none;
 	<td></td>
 	<td colspan="3">
 	<table id="t04">
-	<th><b><label for="lname">Last Name/Surname</label></b></th>
-	<th><b><label for="fname" style="margin-left:300px">First Name</label></b></th>
-	<th><b><label for="mname" style="margin-left:300px">Middle Name</label></b></th>
+	<th style="border:none"><b><label for="lname">Last Name/Surname</label></b></th>
+	<th style="border:none"><b><label for="fname" style="margin-left:300px">First Name</label></b></th>
+	<th style="border:none"><b><label for="mname" style="margin-left:300px">Middle Name</label></b></th>
 	
 	<tr>
-	<td><input type="text" id="lname"></td>
-	<td><input type="text" id="fname" style="margin-left:300px"></td>
-	<td><input type="text" id="mname" style="margin-left:300px"></td>
+	<td style="border:none"><input type="text" id="lname"></td>
+	<td style="border:none"><input type="text" id="fname" style="margin-left:300px"></td>
+	<td style="border:none"><input type="text" id="mname" style="margin-left:300px"></td>
 	</tr>
 	</table>
 	</td>
@@ -165,9 +162,9 @@ border-none;
 	<td><font color="red">*</font><b>4. Select Parent name which is to be printed on the card<br></b><font color="blue">(In case no option is provided then PAN card will be issued with father's name)</font></td>
 	<td colspan="2">
 		<label for="fname">Father Name</label>
-		<input type="radio" id="fname">
+		<input type="radio" id="fname" name="fmname">
 		<label for="mname" style="margin-left:30px">Mother Name</label>
-		<input type="radio" id="mname">
+		<input type="radio" id="mname" name="fmname">
 	</td>
 	</tr>
 	
@@ -186,11 +183,11 @@ border-none;
 	<td><b>6. Gender</b></td>
 	<td colspan="2">
 			<label for="male">Male</label>
-			<input type="radio" id="male">
+			<input type="radio" id="male" name="mft">
 			<label for="female" style="margin-left:30px">Female</label>
-			<input type="radio" id="female">
+			<input type="radio" id="female" name="mft">
 			<label for="trans" style="margin-left:30px">TransGender</label>
-			<input type="radio" id="trans">	
+			<input type="radio" id="trans" name="mft">	
 	</td>
 	</tr>
 
@@ -214,9 +211,9 @@ border-none;
 	<td><b>9. Address of Communication</b></td>
 	<td colspan="2">
 			<label for="res">Residential</label>
-			<input type="radio" id="res">
+			<input type="radio" id="res" name="resoff">
 			<label for="off" style="margin-left:30px">Office</label>
-			<input type="radio" id="off">
+			<input type="radio" id="off" name="resoff">
 	</td>
 	</tr>
 	
@@ -336,9 +333,9 @@ border-none;
 	</tr>
 
 	<tr>
-	<td><input type="radio" id="mbl">
+	<td><input type="radio" id="mbl" name="mbltel">
 	<label for="mbl">Mobile No.</label></td>
-	<td><input type="radio" id="tel">
+	<td><input type="radio" id="tel" name="mbltel">
 	<label for="tel">Telephone No.</label></td>
 	</tr>
 	
@@ -368,9 +365,9 @@ border-none;
 	<td></td>
 	<td>Incase of a citizen of India, then</td>
 	<td colspan="2">
-		<input type="radio" id="aad">
+		<input type="radio" id="aad" name="aadeid">
 		<label for="aad">AADHAAR</label>
-		<input type="radio" id="eid" style="margin-left:20px">
+		<input type="radio" id="eid" name="aadeid" style="margin-left:20px">
 		<label for="eid">EID</label>
 	</td>
 	</tr>
@@ -455,7 +452,8 @@ border-none;
 
 	<tr>
 	<td></td>
-	<td colspan="3">DD MM YYYY<br>Verified today, the 05-10-2020</td>
+	<td colspan="3"><small style="margin-left:120px">MM/DD/YYYY</small><br>Verified today, the <span id="datetime"></span><script>var dt = new Date().toLocaleDateString();
+document.getElementById("datetime").innerHTML=dt</script></td>	
 	</tr>
 	
 	<tr>
@@ -478,8 +476,8 @@ border-none;
 	
 	<tr>
 	<td></td>
-	<td colspan="3"><b>Whether you wish to have?</b><input type="radio" id="pa" style="margin-left:30px"><label for="pa">Physical PAN Card & e-PAN Card</label>
-		<input type="radio" id="epan" style="margin-left:25px"><label for="epan">Only e-PAN Card</label>
+	<td colspan="3"><b>Whether you wish to have?</b><input type="radio" id="pa" name="paep" style="margin-left:30px"><label for="pa">Physical PAN Card & e-PAN Card</label>
+		<input type="radio" id="epan" name="paep" style="margin-left:25px"><label for="epan">Only e-PAN Card</label>
 		<b style="margin-left:30px">Fees Applicable</b>
 	</td>
 	</tr>
@@ -505,7 +503,7 @@ border-none;
 	</tr>
 
 	<tr>
-	<td></td>
+	<td><input type="radio" id="onp" name="onp"></td>
 	<td colspan="3">Online Payment</td>
 	</tr>
 	
@@ -514,14 +512,14 @@ border-none;
 
 
 
-	<table id="taf">
+	<table id="taf" style="width:95%">
 	
 	<tr>
-	<td colspan="2">For Paperless PAN Application:<input type="radio" id="ip6" style="margin-left:20px"><label for="ip6">Yes</label><input type="radio" id="ip7" style="margin-left:20px"><label for="ip7">No</label></td>
+	<td colspan="2" style="border:none">For Paperless PAN Application:<input type="radio" id="ip6" name="ip67" style="margin-left:20px"><label for="ip6">Yes</label><input type="radio" id="ip7" name="ip67" style="margin-left:20px"><label for="ip7">No</label></td>
 	</tr>
 	
 	<tr>
-	<td colspan="2"><input type="radio" id="dsc" style="margin-left:10px"><label for="dsc">DSC</label>
+	<td colspan="2" style="border:none"><input type="radio" id="dsc" name="dsc1" style="margin-left:10px"><label for="dsc">DSC</label>
 		<select name="dsc" id="dsc" style="width:250px">
 		<option value="pselect1">-- Select --</option>
 		</select>
@@ -530,34 +528,34 @@ border-none;
 	</tr>
 
 	<tr>
-	<td colspan="2">Upload Photo<input type="file" id="file1" style="margin-left:50px"><label style="margin-left:30px">Upload Signature</label><input type="file" id="sig" style="margin-left:10px"></label></td>
+	<td colspan="2" style="border:none">Upload Photo<input type="file" id="file1" style="margin-left:50px"><label style="margin-left:30px">Upload Signature</label><input type="file" id="sig" style="margin-left:10px"></label></td>
 	</tr>
 
 	<tr>
-	<td colspan="2">Upload Document<input type="file" id="doc1" style="margin-left:50px"></td>
+	<td colspan="2" style="border:none">Upload Document<input type="file" id="doc1" style="margin-left:50px"></td>
 	</tr>
 	
 	<tr>
-	<td colspan="2"><input type="button" id="b1" value="Fetch from DigiLocker"></td>
+	<td colspan="2" style="border:none"><input type="button" id="b1" value="Fetch from DigiLocker"></td>
 	</tr>
 
 	<tr>
-	<td><label for="alrp">ALREADY UPLOADED PHOTO:</label></td>
-	<td><input type="text" id="alrp" style="margin-left:80px" size="60"></td>
+	<td style="border:none"><label for="alrp">ALREADY UPLOADED PHOTO:</label></td>
+	<td style="border:none"><input type="text" id="alrp" style="margin-left:80px" size="60"></td>
 	</tr>
 
 	<tr>
-	<td><label for="alrs">ALREADY UPLOADED SIGNATURE:</label></td>
-	<td><input type="text" id="alrs" style="margin-left:80px" size="40"></td>
+	<td style="border:none"><label for="alrs">ALREADY UPLOADED SIGNATURE:</label></td>
+	<td style="border:none"><input type="text" id="alrs" style="margin-left:80px" size="40"></td>
 	</tr>
 
 	<tr>
-	<td><label for="alrd">ALREADY UPLOADED DOCUMENTS:</label></td>
-	<td><textarea id="alrd" style="margin-left:80px" rows="6" columns="70"></textarea></td>
+	<td style="border:none"><label for="alrd">ALREADY UPLOADED DOCUMENTS:</label></td>
+	<td style="border:none"><textarea id="alrd" style="margin-left:80px" rows="6" columns="70"></textarea></td>
 	</tr>
 
 	<tr>
-	<td colspan="2"><center><input type="submit" value="submit"></center></td>
+	<td colspan="2" style="border:none"><center><input type="submit" value="submit"></center></td>
 	</tr>
 	</table>
 	
